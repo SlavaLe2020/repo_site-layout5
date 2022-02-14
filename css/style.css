@@ -185,3 +185,49 @@ body {
   right: 60px;
   top: 25px;
 }
+
+.advantages{
+  margin-bottom: 200px;
+}
+
+.advantages__inner{
+  display: flex;
+  justify-content: space-around;
+}
+
+.advantages__item{
+  width: 240px;
+  padding-left: 40px;
+  padding-top: 35px;
+  position: relative;
+}
+
+.advantages__item::before{
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 5px solid rgba(126,178,82, .3);
+  top: 0;
+  left: 0;
+}
+
+.advantages__item-number{
+  color: #a4c58c;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  border-bottom: 3px solid #a4c58c;
+  display: inline-block;
+}
+
+.advantages__item-number span{
+  font-size: 30px;
+}
+
+.advantages__item-text{
+  padding-top: 20px;
+  font-size: 16px;
+  line-height: 24px;
+}
