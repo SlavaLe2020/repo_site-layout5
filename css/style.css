@@ -272,6 +272,19 @@ body {
   cursor: pointer;
 }
 
+.tab.active {
+  position: relative;
+}
+
+.tab.active::after {
+  position: absolute;
+  content: "";
+  right: 25px;
+  background-image: url(../images/shevron.svg);
+  width: 8px;
+  height: 13px;
+}
+
 .tab span{
   color: #a4c58c;
   margin-right: 18px;
@@ -308,3 +321,69 @@ body {
   left: 227px;
   top: 135px;
 }
+
+.item-4{
+  left: 227px;
+  top: 210px;
+}
+
+.item-5{
+  left: 227px;
+  top: 15px;
+}
+
+.item-6{
+  left: 260px;
+  top: 250px;
+}
+
+.item-7{
+  left: 227px;
+  top: 15px;
+  
+}
+
+.item-8{
+  left: 227px;
+  top: 210px;
+}
+
+.item-9{
+  left: 227px;
+  top: 25px;
+}
+
+.tabs__box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs__box .tab {
+  font-size: 16px;
+  font-weight: 400;
+  width: 50%;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  
+}
+
+.tabs__box .tab span {
+  font-size: 12px;
+}
+
+.tabs__box .tab:first-child,
+.tabs__box .tab:nth-child(3) {
+  border-right: 1px solid #e6efde;
+  padding-right: 25px;
+}
+
+.tabs__box .tab:last-child,
+.tabs__box .tab:nth-child(2) {
+  padding-left: 25px;
+}
+
+.tabs__box .tab.active::after {
+  display: none;
+}
+
