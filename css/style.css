@@ -7,6 +7,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .container {
@@ -249,6 +251,7 @@ body {
   background-size: cover;
   background-position: top center;
   position: relative;
+  margin-top: -170px;
 }
 
 .list__inner{
@@ -265,8 +268,10 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
+  display: flex;
+  align-items: center;
   color: #303030;
-  padding: 20px 0;
+  padding: 24px 40px 24px 0;
   border-bottom: 1px solid #e6efde;
   text-transform: uppercase;
   cursor: pointer;
@@ -387,3 +392,20 @@ body {
   display: none;
 }
 
+.tabs__reviews {
+  padding: 20px;
+  background-color: #f6f9f3;
+  max-width: 430px;
+  position: absolute;
+  bottom: 0;
+}
+
+.tabs__reviews-inner {
+  border: 1px solid #c5dab5;
+  padding: 30px 50px 30px 40px;
+}
+
+.tabs__reviews-text {
+  color: #303030;
+  
+}
