@@ -409,3 +409,43 @@ body {
   color: #303030;
   
 }
+
+.tabs__reviews-link {
+  color:#7eb152;
+  background-color: #f6f9f3;
+  padding-bottom: 1px;
+  font-weight: 600;
+  padding: 0 8px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.list__link {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.list__link a {
+   margin-top: 20px;
+   padding: 22px 100px 22px 120px;
+   outline: none;
+   color: #fff;
+   font-size: 14px;
+   font-weight: 700;
+   letter-spacing: 1px;
+   background-color: #7eb252;
+   text-transform: uppercase;
+   text-decoration: none;
+   min-width: 500px;
+   position: relative;
+}
+
+.list__link a:after{
+  content: '';
+  background-image: url(../images/arrow-right.png);
+  width: 31px;
+  height: 9px;
+  position: absolute;
+  right: 100px;
+  top: 30px;
+}
