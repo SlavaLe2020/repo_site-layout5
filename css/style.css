@@ -9,12 +9,18 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  color: #303030;
 }
 
 .container {
   max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1720px;
   margin: 0 auto;
 }
 
@@ -458,9 +464,7 @@ body {
 .popularity__wrapper {
   background-image: url(../images/popularity.jpg);
   background-repeat: no-repeat;
-  max-width: 1720px;
   min-height: 645px;
-  margin: 0 auto;
 }
 
 .popularity__inner {
@@ -548,4 +552,33 @@ body {
   position: absolute;
   right: 40px;
   top: 30px;
+}
+
+.history {
+  padding-top: 270px;
+}
+
+.history__wrapper {
+  background-image: url(../images/alonso.jpg);
+  background-repeat: no-repeat;
+  background-position: right center;
+  min-height: 920px;
+}
+
+.history__title {
+  padding: 90px 0 45px;
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 700;
+  max-width: 570px;
+}
+
+.history__text {
+  background-color: #f6f9f3;
+  padding: 55px 30px 90px 0;
+  max-width: 700px;
+}
+
+.history__text p{
+  margin: 15px 0;
 }
