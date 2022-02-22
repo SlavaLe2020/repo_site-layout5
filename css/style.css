@@ -172,6 +172,9 @@ body {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+
+.form__btn {
   padding: 22px 110px 22px 70px;
   border: none;
   outline: none;
@@ -182,9 +185,10 @@ body {
   background-color: #7eb252;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
 }
 
-.top-form button:after {
+.form__btn:after {
   content: '';
   background-image: url(../images/arrow-right.png);
   width: 31px;
@@ -563,10 +567,11 @@ body {
   background-repeat: no-repeat;
   background-position: right center;
   min-height: 920px;
+  overflow: hidden;
 }
 
 .history__title {
-  padding: 90px 0 45px;
+  padding: 80px 0 40px;
   font-size: 40px;
   line-height: 50px;
   font-weight: 700;
@@ -575,10 +580,55 @@ body {
 
 .history__text {
   background-color: #f6f9f3;
-  padding: 55px 30px 90px 0;
+  padding: 42px 30px 65px 0;
   max-width: 700px;
+  position: relative;
+}
+
+.history__text::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 275px;
+  background-color: #f6f9f3;
+  right: 100%;
+  top: 0;
 }
 
 .history__text p{
   margin: 15px 0;
+}
+
+.history__form {
+  max-width: 400px;
+  padding-left: 30px;
+  margin-left: 200px;
+}
+
+.history__form-title {
+  margin: 35px 0 20px;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
+  padding-right: 30px;
+  text-transform: uppercase;
+}
+
+.history__form input {
+  border: none;
+  outline: none;
+  height: 34px;
+  border-bottom: 1px solid #cddcbc;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.history__form input::placeholder {
+  color: #a8c48c;
+}
+
+.history__form button {
+  width: 100%;
+  margin-top: 30px;
 }
