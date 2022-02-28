@@ -718,6 +718,8 @@ body {
   background-color: #fff;
   max-width: 1010px;
   margin: 0 auto;
+  position: relative;
+  top: -70px;
 }
 
 .item {
@@ -756,4 +758,48 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   padding: 0 10px 10px;
+}
+
+.composition__item {
+  background-color: #f6f9f3;
+  display: inline-block;
+}
+
+.composition__item-inner {
+  width: 270px;
+  height: 270px;
+  background-image: url(../images/comp-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  position: relative;
+}
+
+.composition__item-num,
+.composition__item-name {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 3px;
+  color: #a4c58c;
+  font-weight: 700;
+  position: absolute;
+  transform: rotate(-90deg);
+}
+
+.composition__item-num {
+  top: 20px;
+  left: -7px;
+}
+
+.composition__item-name {
+  font-weight: 400;
+  bottom: 13px;
+  right: 28px;
+  width: 0;
+  white-space: nowrap;
+  height: 0;
+}
+
+.composition__item-effect {
+  display: none;
 }
