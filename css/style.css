@@ -558,7 +558,8 @@ body {
   margin-right: 70px;
 }
 
-.popularity__box-link {
+.popularity__box-link,
+.composition__link-btn {
   padding: 22px 85px 22px 27px;
   outline: none;
   color: #fff;
@@ -571,7 +572,8 @@ body {
   position: absolute;
 }
 
-.popularity__box-link:after {
+.composition__link-btn::after,
+.popularity__box-link::after {
   content: '';
   background-image: url(../images/arrow-right.png);
   width: 31px;
@@ -873,4 +875,41 @@ body {
   height: 7px;
   border-radius: 50%;
   background-color: #a4c58c;
+}
+
+.composition__link {
+  border: 1px solid #c8dcba;
+  padding: 54px 100px 95px 49px;
+  max-width: 830px;
+  height: 100%;
+  position: relative;
+  margin-left: 15px;
+}
+
+.composition__link-text {
+  padding-left: 25px;
+  position: relative;
+}
+
+.composition__link-text::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #a4c58c;
+}
+
+.composition__link-text p{
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.composition__link-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 22px 85px 22px 50px;
 }
