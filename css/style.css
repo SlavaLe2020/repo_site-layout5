@@ -1095,3 +1095,7 @@ body {
 .build__link::after {
   top: 27px;
 }
+
+.certificate__title {
+  font-size: 40px;
+}
