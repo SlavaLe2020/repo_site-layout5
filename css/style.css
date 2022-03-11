@@ -561,7 +561,8 @@ body {
 .popularity__box-link,
 .composition__link-btn,
 .reviews__link-popup,
-.build__link {
+.build__link,
+.certificate__link {
   padding: 22px 85px 22px 27px;
   outline: none;
   color: #fff;
@@ -577,7 +578,8 @@ body {
 .composition__link-btn::after,
 .popularity__box-link::after,
 .reviews__link-popup::after,
-.build__link::after {
+.build__link::after,
+.certificate__link::after {
   content: '';
   background-image: url(../images/arrow-right.png);
   width: 31px;
@@ -1113,11 +1115,12 @@ body {
 
 .certificate__wrapper {
   background-color: #f6f9f3;
-  padding: 30px 0 95px;
+  padding: 30px 0 0;
 }
 
 .certificate__inner {
   display: flex;
+  height: 560px;
 }
 
 .certificate__content {
@@ -1139,9 +1142,15 @@ body {
   top: -200px;
 }
 
+.certificate__box {
+  background-color: #fff;
+  padding: 16px 20px 20px ;
+}
+
 .certificate__box fieldset {
   border: 1px solid #c8dcba;
-  padding: 45px 15px 80px 50px;
+  padding: 45px 45px 100px 50px;
+  position: relative;
 }
 
 .certificate__box  legend{
@@ -1149,5 +1158,19 @@ body {
   font-size: 14px;
   color: #a4c58c;
   padding: 0 8px;
-  margin-left: 40px;
+}
+
+.certificate__box p {
+  margin: 0 0 10px;
+  line-height: 22px;
+}
+
+.certificate__link {
+  bottom: 0;
+  right: 0;
+  padding: 18px 85px 18px 60px;
+}
+
+.certificate__link::after {
+  top: 27px;
 }
