@@ -15,6 +15,53 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .list__inner {
+        display: block;
+    }
+    .tabs__content {
+       margin: 0 auto; 
+       max-width: 500px;
+    }
+    .tabs__reviews {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .tabs__content::before,
+    .tabs__content::after  {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #a4c58c;
+        z-index: 1;
+    }
+
+    .tabs__content::before {
+        right: 100%;
+    }
+
+    .tabs__content::after {
+        left: 100%;
+    }
+
+    .list__link {
+        justify-content: center;
+    }
+
+    .list__link a {
+        padding: 22px 36px 22px 73px;
+        min-width: 430px;
+    }
+
+    .list__link a::after {
+        right: 85px;
+
+    }
+}
+
 @media (max-width: 940px) {
     .top__inner-form {
         position: absolute;
