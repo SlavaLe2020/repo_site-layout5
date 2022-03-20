@@ -286,6 +286,20 @@
     .tabs__content::before {
         display: none;
     }
+
+    .tab-order-3 {
+        border-bottom: none;
+    }
+
+    .tabs__reviews {
+        position: static;
+        margin: 0;
+    }
+
+    .tab.active::after {
+        display: none;
+    }
+
 }
 
 @media (max-width: 480px) {
@@ -303,6 +317,46 @@
 
     .header__logo img {
         width: 110px;
+    }
+
+    .list__title {
+       font-size: 24px;
+       line-height: 30px; 
+    }
+
+    .tab {
+        font-size: 12px;
+        padding: 24px 0px;
+    }
+
+    .tabs__reviews-text {
+        font-size: 14px;
+    }
+
+    .tabs__reviews {
+        padding: 0;
+    }
+
+    .tab__item {
+        display: none;
+    }
+
+    .tab__item:first-child  {
+        display: none;
+    }
+
+    .tabs {
+        padding-right: 0;
+    }
+
+    .tabs__reviews-inner {
+        padding: 30px 8px;
+        width: 283px;
+    }
+
+    .tabs__reviews-link {
+        left: 60px;
+        bottom: 8px;
     }
 }
 
@@ -333,5 +387,20 @@
 
     .advantages__item {
         margin-bottom: 40px;
+    }
+
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .list__link a {
+        margin-top: 0;
+        padding: 22px 10px 22px 10px;
+        text-align: center;
+    }
+
+    .list__link a::after {
+        display: none;
     }
 }
