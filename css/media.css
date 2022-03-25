@@ -136,6 +136,25 @@
     .top__inner-img {
         margin-left: 0;
     }
+
+    .items {
+        background-color: #f6f9f3;
+    }
+
+    .items__title {
+      margin: 0 auto; 
+      text-align: center;
+    }
+
+    .item {
+        margin-left: 7px;
+        margin-right: 7px;
+        width: 33.3333%;
+    }
+
+    .items__inner {
+        padding: 20px 5px;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -239,6 +258,10 @@
     .advantages__inner {
         padding-top: 100px;
     }
+
+    .item {
+        min-height: 275px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -311,6 +334,20 @@
         padding-right: 57%;
         padding-bottom: 135px;
     }
+
+    .item {
+        max-width: 225px;
+        min-height: 225px;
+    }
+
+    .items__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .items__wrapper {
+        min-height: 300px;
+    }
 }
 
 @media (max-width: 760px) {
@@ -351,6 +388,19 @@
         top: 0;
         width: 100%;
         height: 385px;
+    }
+}
+
+@media (max-width: 680px) {
+    .items__inner {
+        display: block;
+    }
+
+    .item {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        border: none;
     }
 }
 
@@ -415,6 +465,12 @@
 
     .popularity__box-link::after {
         display: none;
+    }
+
+    .quote__inner {
+        border: none;
+        font-size: 20px;
+        line-height: 35px;
     }
 }
 
@@ -583,6 +639,15 @@
     .history__title {
         padding-top: 155px;
     }
+
+    .quote__inner {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .author {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -652,5 +717,18 @@
 
     .form__btn::after {
         display: none;
+    }
+
+    .items__inner {
+        background-color: #f6f9f3;
+    }
+
+    .item__number {
+        color: #f6f9f3;
+    }
+
+    .items__title {
+        font-size: 24px;
+        line-height: 30px;
     }
 }
