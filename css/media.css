@@ -139,6 +139,10 @@
     .reviews-text:nth-child(even){
         display: none;
     }
+
+    .reviews-text {
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 1120px) {
@@ -286,6 +290,24 @@
     .composition__link {
         order: 2;
     }
+
+    .reviews__link {
+        flex-direction: column;
+    }
+
+    .reviews__link-tab {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 840px) {
+    .build__inner-box {
+       padding: 60px 45px 70px 50px; 
+    }
+
+    .build__wrapper{
+        background-image: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -413,6 +435,28 @@
     .composition__title br {
         display: none;
     }
+
+    .reviews__title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .reviews__title br {
+        display: none;
+    }
+
+    .reviews__content {
+        padding-bottom: 150px;
+    }
+
+    .reviews__link {
+        margin-top: -192px;
+    }
+    
+    .reviews__link-tab {
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 760px) {
@@ -428,6 +472,45 @@
 
     .advantages__item {
         padding-right: 30px;
+    }
+}
+
+@media (max-width: 740px) {
+    .reviews-text {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .reviews-text:nth-child(odd) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .reviews-text:nth-child(odd)::before {
+        left: 0;
+    }
+
+    .reviews__link-popup {
+        width: 100%;
+        text-align: center;
+        padding: 22px 5px;
+    }
+
+    .reviews__link-popup::after {
+        display: none;
+    }
+
+    .reviews__tab {
+        width: 50%;
+        text-align: center;
+        padding: 25px 5px;
+    }
+
+    .reviews__tab {
+        width: 49%;
+        text-align: center;
+        padding: 25px 5px;
+        display: inline-block;
     }
 }
 
@@ -826,13 +909,18 @@
 
     .composition__link-btn {
         padding: 22px 10px;
-        left: -20px;
-        right: -20px;
+        left: -10px;
+        right: -10px;
         text-align: center;
         bottom: auto;
     }
 
     .composition__link-btn::after {
         display: none;
+    }
+
+    .reviews__title {
+        font-size: 24px;
+        line-height: 30px;
     }
 }
