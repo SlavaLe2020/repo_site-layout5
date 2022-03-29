@@ -183,6 +183,11 @@
     .certificate__content {
         padding-left: 0;
     }
+
+    .footer__phone,
+    .footer__logo {
+       display: none; 
+    }
 }
 
 @media (max-width: 1000px) {
@@ -320,6 +325,19 @@
     .certificate__content {
         max-width: 100%;
         margin-right: 0;
+    }
+
+    .certificate__images {
+        padding: 25px 0;
+        text-align: center;
+    }
+
+    .certificate__images img {
+        position: static;
+    }
+
+    .certificate {
+        padding-top: 50px;
     }
 }
 
@@ -488,6 +506,12 @@
     
     .reviews__link-tab {
         margin-right: 0;
+    }
+
+    .footer__inner {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -860,6 +884,21 @@
     .build__title span {
         text-align: center;
     }
+
+    .certificate__box fieldset {
+        padding: 45px 10px 95px 10px;
+    }
+
+    .certificate__title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .certificate__images img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
 }
 
 @media (max-width: 360px) {
@@ -987,4 +1026,37 @@
         font-size: 24px;
         line-height: 30px;
     }
+
+    .certificate {
+        background-color: #f6f9f3;
+    }
+
+    .certificate__box {
+        padding: 0;
+        background-color: #f6f9f3;
+    }
+
+    .certificate__box fieldset {
+        border: none;
+        padding: 0;
+    }
+
+    .certificate__box legend {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .certificate__link {
+        padding: 22px 5px;
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-top: 25px;
+        position: static;
+    }
+
+    .certificate__link::after {
+        display: none;
+    }
+
 }
